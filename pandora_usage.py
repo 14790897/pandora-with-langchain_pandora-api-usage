@@ -102,7 +102,7 @@ def ask():
         parent_message_id = str(input("请输入parent_message_id："))  # 需要手动设置5.2
     while True:
         # 向ChatGPT提问，等待其回复
-        model = "text-davinci-002-render-sha"  # 选择一个可用的模型Default (GPT-3.5)：text-davinci-002-render-sha
+        model = "gpt-4"  # 选择一个可用的模型Default (GPT-3.5)：text-davinci-002-render-sha等
         prompt = str(input("请输入prompt："))
         message_id = str(uuid.uuid4())  # 随机生成一个消息ID
         conversation_id, parent_message_id = ask_chatgpt(prompt, model, message_id, parent_message_id, conversation_id)
